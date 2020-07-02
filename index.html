@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Watch Assignation</title> 
+</head>
+<body onload="fetchStore()"> 
+    <section class="container"> 
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                <ul id="ulName"></ul>
+            </div>
+            <form class="col-xs-9 col-md-11" > 
+                <label for="name">Student Name</label>
+                <input class="col-xs-9 col-md-12" name="name" value="" id="name" type="text" placeholder="Name" required/>
+                <span onclick="postName()" class="col col-sm col-md-2 btn btn-outline-success">Add</span>
+            </form>
+            <div class="col-xs-6 col-md-4">
+                <ul id="ulSubject"></ul>
+            </div>
+            <form class="col-xs-9 col-md-11"> 
+                <label for="asigne">Veille Name</label>
+                <input class="col-xs-9 col-md-12" name="asigne" value="" id="asigne" type="text" placeholder="subject" required/> 
+                <span onclick="postSubject()"  class="col col-sm col-md-2 btn btn-outline-success">Assign</span>
+            </form>
+            <div class="refresh col-xs-9 col-md-11">
+                <span onclick="refresh()" class="col col-sm col-md-3 btn btn-outline-danger">Refresh the list</span>
+            </div>
+        </div>
+    </section> 
+    <script src="myscripts.js"></script>
+</body>
+</html>
